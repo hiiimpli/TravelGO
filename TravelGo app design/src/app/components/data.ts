@@ -1,0 +1,178 @@
+export interface Destination {
+  id: string;
+  name: string;
+  country: string;
+  region: string;
+  rating: number;
+  reviews: number;
+  price: number;
+  currency: string;
+  duration: string;
+  category: string;
+  tags: string[];
+  image: string;
+  description: string;
+  highlights: string[];
+  bestTime: string;
+  weather: string;
+  saved: boolean;
+}
+
+export const destinations: Destination[] = [
+  {
+    id: "1",
+    name: "Maldives Atoll",
+    country: "Maldives",
+    region: "South Asia",
+    rating: 4.9,
+    reviews: 2847,
+    price: 1850,
+    currency: "USD",
+    duration: "7 days",
+    category: "Beach",
+    tags: ["Luxury", "Snorkeling", "Overwater Bungalows"],
+    image: "https://images.unsplash.com/photo-1535262412227-85541e910204?w=800&h=600&fit=crop&auto=format",
+    description: "Experience paradise in its purest form. Crystal-clear lagoons, vibrant coral reefs, and overwater villas make the Maldives the ultimate tropical escape.",
+    highlights: ["Private beach access", "Underwater restaurant", "Dolphin watching", "Snorkeling with manta rays"],
+    bestTime: "Nov – Apr",
+    weather: "28°C / Sunny",
+    saved: false,
+  },
+  {
+    id: "2",
+    name: "Bali Highlands",
+    country: "Indonesia",
+    region: "Southeast Asia",
+    rating: 4.7,
+    reviews: 5312,
+    price: 680,
+    currency: "USD",
+    duration: "10 days",
+    category: "Culture",
+    tags: ["Temples", "Rice Terraces", "Wellness"],
+    image: "https://images.unsplash.com/photo-1672841828459-bc913fdcd995?w=800&h=600&fit=crop&auto=format",
+    description: "Bali's highlands offer misty rice terraces, ancient Hindu temples, and vibrant arts scene. A spiritual and sensory journey unlike any other.",
+    highlights: ["Tegallalang Rice Terraces", "Mount Batur sunrise trek", "Traditional Kecak dance", "Temple ceremonies"],
+    bestTime: "May – Sep",
+    weather: "27°C / Partly cloudy",
+    saved: true,
+  },
+  {
+    id: "3",
+    name: "Swiss Alps",
+    country: "Switzerland",
+    region: "Europe",
+    rating: 4.8,
+    reviews: 3109,
+    price: 2400,
+    currency: "USD",
+    duration: "8 days",
+    category: "Adventure",
+    tags: ["Skiing", "Hiking", "Scenic Trains"],
+    image: "https://images.unsplash.com/photo-1772423966375-0f7bb5a02ad0?w=800&h=600&fit=crop&auto=format",
+    description: "The Swiss Alps are a playground for adventurers and nature lovers. From world-class ski slopes to breathtaking hiking trails, every moment is spectacular.",
+    highlights: ["Jungfraujoch summit", "Grindelwald First Cliff Walk", "Glacier Express ride", "Alpine village walks"],
+    bestTime: "Dec – Mar / Jun – Sep",
+    weather: "12°C / Variable",
+    saved: false,
+  },
+  {
+    id: "4",
+    name: "Angkor Wat",
+    country: "Cambodia",
+    region: "Southeast Asia",
+    rating: 4.8,
+    reviews: 4021,
+    price: 420,
+    currency: "USD",
+    duration: "5 days",
+    category: "Culture",
+    tags: ["UNESCO", "Ancient Ruins", "History"],
+    image: "https://images.unsplash.com/photo-1444194563460-454833ba6005?w=800&h=600&fit=crop&auto=format",
+    description: "The largest religious monument in the world, Angkor Wat is a breathtaking testament to the Khmer Empire's architectural genius.",
+    highlights: ["Sunrise at Angkor Wat", "Ta Prohm jungle temple", "Bayon face towers", "Traditional Apsara dance"],
+    bestTime: "Nov – Mar",
+    weather: "30°C / Dry season",
+    saved: false,
+  },
+  {
+    id: "5",
+    name: "Patagonia Trek",
+    country: "Chile",
+    region: "South America",
+    rating: 4.9,
+    reviews: 1876,
+    price: 1200,
+    currency: "USD",
+    duration: "12 days",
+    category: "Adventure",
+    tags: ["Trekking", "Wildlife", "Glaciers"],
+    image: "https://images.unsplash.com/photo-1764022398523-cb127ab75581?w=800&h=600&fit=crop&auto=format",
+    description: "Trek through one of the world's most dramatic landscapes. Towering granite peaks, massive glaciers, and pristine wilderness await in Patagonia.",
+    highlights: ["Torres del Paine W Trek", "Grey Glacier kayaking", "Guanaco wildlife viewing", "Stargazing nights"],
+    bestTime: "Oct – Apr",
+    weather: "15°C / Windy",
+    saved: true,
+  },
+  {
+    id: "6",
+    name: "Santorini",
+    country: "Greece",
+    region: "Europe",
+    rating: 4.7,
+    reviews: 6204,
+    price: 1100,
+    currency: "USD",
+    duration: "6 days",
+    category: "Beach",
+    tags: ["Sunset Views", "Luxury", "Wine"],
+    image: "https://images.unsplash.com/photo-1603477849227-705c424d1d80?w=800&h=600&fit=crop&auto=format",
+    description: "Santorini's iconic blue-domed churches and whitewashed clifftop villages set against the Aegean Sea create an incomparable romantic backdrop.",
+    highlights: ["Oia sunset", "Caldera sailing", "Akrotiri excavations", "Volcanic beach swim"],
+    bestTime: "Apr – Oct",
+    weather: "25°C / Sunny",
+    saved: false,
+  },
+  {
+    id: "7",
+    name: "Kyoto Gardens",
+    country: "Japan",
+    region: "East Asia",
+    rating: 4.8,
+    reviews: 7531,
+    price: 1350,
+    currency: "USD",
+    duration: "9 days",
+    category: "Culture",
+    tags: ["Temples", "Cherry Blossoms", "Tea Ceremony"],
+    image: "https://images.unsplash.com/photo-1554554497-0095c34db3ec?w=800&h=600&fit=crop&auto=format",
+    description: "Kyoto preserves Japan's imperial past with thousands of classical Buddhist temples, as well as gardens, imperial palaces, and traditional wooden townhouses.",
+    highlights: ["Arashiyama Bamboo Grove", "Fushimi Inari shrine", "Geisha district Gion", "Nishiki Market"],
+    bestTime: "Mar – May / Oct – Nov",
+    weather: "18°C / Seasonal",
+    saved: false,
+  },
+  {
+    id: "8",
+    name: "Amalfi Coast",
+    country: "Italy",
+    region: "Europe",
+    rating: 4.6,
+    reviews: 4892,
+    price: 1600,
+    currency: "USD",
+    duration: "7 days",
+    category: "Beach",
+    tags: ["Coastal Drive", "Villages", "Cuisine"],
+    image: "https://images.unsplash.com/photo-1541417904950-b855846fe074?w=800&h=600&fit=crop&auto=format",
+    description: "The Amalfi Coast is a stretch of coastline on the southern edge of Italy's Sorrentine Peninsula. Dramatic cliffs, colorful villages and azure waters define this UNESCO site.",
+    highlights: ["Positano village", "Path of Gods hike", "Limoncello tasting", "Boat trip to Capri"],
+    bestTime: "Apr – Jun / Sep – Oct",
+    weather: "24°C / Mediterranean",
+    saved: false,
+  },
+];
+
+export const categories = ["All", "Beach", "Adventure", "Culture", "City", "Wildlife", "Winter"];
+
+export const popularSearches = ["Bali", "Japan", "Italy", "New Zealand", "Morocco", "Iceland"];
